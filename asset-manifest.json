@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AndrewKhorsun/React_Currency_Converter/static/css/main.3b17236a.css",
+    "main.js": "/AndrewKhorsun/React_Currency_Converter/static/js/main.80f32fe4.js",
+    "index.html": "/AndrewKhorsun/React_Currency_Converter/index.html",
+    "main.3b17236a.css.map": "/AndrewKhorsun/React_Currency_Converter/static/css/main.3b17236a.css.map",
+    "main.80f32fe4.js.map": "/AndrewKhorsun/React_Currency_Converter/static/js/main.80f32fe4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b17236a.css",
+    "static/js/main.80f32fe4.js"
+  ]
+}
