@@ -15,7 +15,7 @@ export const ExchangeRates: React.FC = () => {
         ""
       )}
 
-      <ul className="category-list">
+      <ul className="list">
         {data.map((el) => (
           <li key={el.cc}>
             <strong>1 {el.cc}</strong> - {el.txt} ={" "}

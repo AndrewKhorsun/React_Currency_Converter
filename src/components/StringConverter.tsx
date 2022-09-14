@@ -44,10 +44,10 @@ export const StringConverter: React.FC<Props> = ({ data }) => {
       ></input>
       <div>
         <button
-          className="button is-success mt-2 mb-5"
+          className="button is-success is-outlined mt-2 mb-5"
           onClick={() => convert(input)}
         >
-          Розрахувати
+          Обчислити
         </button>
       </div>
       <label className="label">
