@@ -1,11 +1,11 @@
 import React from "react";
 import { useGetExchangeRatesQuery } from "../app/api";
 
-export const Task2: React.FC = () => {
+export const ExchangeRates: React.FC = () => {
   const { data = [] } = useGetExchangeRatesQuery();
 
   return (
-    <div className="container">
+    <>
       {data.length > 0 ? (
         <p className="title">
           Офіційний курс гривні до іноземних валют на{" "}
@@ -17,9 +17,12 @@ export const Task2: React.FC = () => {
 
       <ul className="category-list">
         {data.map((el) => (
-          <li key={el.cc}><strong>1 {el.cc}</strong> - {el.txt} = <strong>{el.rate} UAH</strong></li>
+          <li key={el.cc}>
+            <strong>1 {el.cc}</strong> - {el.txt} ={" "}
+            <strong>{el.rate} UAH</strong>
+          </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };

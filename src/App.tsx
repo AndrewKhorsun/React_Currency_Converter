@@ -2,8 +2,8 @@ import React from "react";
 import classNames from "classnames";
 import "./App.scss";
 import { Navigate, NavLink, Route, Routes } from "react-router-dom";
-import { Task1 } from "./components/task_1";
-import { Task2 } from "./components/task_2";
+import { SelectConverter } from "./components/SelectConverter";
+import { ExchangeRates } from "./components/ExchangeRates";
 
 const App: React.FC = () => {
   const activeClass = ({ isActive }: { isActive: boolean }) => {
@@ -31,8 +31,8 @@ const App: React.FC = () => {
           <Route path="/" element={<h1 className="title">Оберіть сторінку</h1>} />
           <Route path="*" element={<h1 className="title">Page not found</h1>} />
           <Route path="home" element={<Navigate to="/" />} />
-          <Route path="/task1" element={<Task1 />} />
-          <Route path="/task2" element={<Task2 />} />
+          <Route path="/task1" element={<SelectConverter />} />
+          <Route path="/task2" element={<ExchangeRates />} />
         </Routes>
       </div>
     </>

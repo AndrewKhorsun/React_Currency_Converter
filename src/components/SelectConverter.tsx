@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useGetExchangeRatesQuery } from "../app/api";
 import { exchangeRate } from "../types/exchangeRate";
+import { StringConverter } from "./StringConverter";
 
-export const Task1: React.FC = () => {
+export const SelectConverter: React.FC = () => {
   const { data = [] } = useGetExchangeRatesQuery();
   const [firstInput, setFirstInput] = useState<number | undefined>(undefined);
   const [secondInput, setSecondInput] = useState<number | undefined>(undefined);
@@ -103,6 +104,7 @@ export const Task1: React.FC = () => {
           </div>
         </div>
       </div>
+      <StringConverter data={preparedData} />
     </>
   );
 };
