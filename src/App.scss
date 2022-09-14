@@ -1,0 +1,36 @@
+.exchange {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  margin: 30px auto;
+  max-width: 600px;
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.title {
+  text-align:  center;
+  margin-top: 50px;
+}
+
+.category-list {
+  list-style: none;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgb(232, 255, 239);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
